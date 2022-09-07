@@ -5,7 +5,7 @@ Vue Query Router for routing by query in Vue Router
 
 `npm install vue-query-router`
 
-## Usage
+## Usage with TypeScript
 
 Step 1.
 If you need to add page at "mysite.com/pathname",
@@ -78,5 +78,5 @@ Step 5.
 You may need to add an entry to the declaration file, for example 'modules.d.ts'.
 
 ```ts
-  declare module 'vue-query-router'
+  declare module 'vue-query-router';
 ```

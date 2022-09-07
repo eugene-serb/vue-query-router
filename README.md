@@ -5,14 +5,17 @@ Vue Query Router for routing by query in Vue Router
 
 `npm install vue-query-router`
 
-## Usage
+## Usage with TypeScript
+
+Step 1.
 If you need to add page at "mysite.com/pathname",
 add to the public folder HTML file with name "pathname"
 with redirect to "mysite.com/?pathname".
 
+Step 2.
 Add your "pathname" route to the routes.
 
-  ```ts
+```ts
   import { RouteRecordRaw } from 'vue-router';
 
   const routes: Array<RouteRecordRaw> = [
@@ -26,6 +29,7 @@ Add your "pathname" route to the routes.
   export default routes;
 ```
 
+Step 3.
 Next step will be add route to the queries.
 
 ```ts
@@ -41,6 +45,7 @@ Next step will be add route to the queries.
   export default queries;
 ```
 
+Step 4.
 Open router index file, and add next code before export router
 and after router init and routes, queries arrays.
 
@@ -67,4 +72,11 @@ and after router init and routes, queries arrays.
   });
 
   export default router;
+```
+
+Step 5.
+You may need to add an entry to the declaration file, for example 'modules.d.ts'.
+
+```ts
+  declare module 'vue-query-router';
 ```

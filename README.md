@@ -7,33 +7,39 @@ Vue Query Router for routing by query in Vue Router
 
 ## Usage with TypeScript
 
+Objective.
+You are building a single page application (SPA) and you need to add a page
+to Vue.js and do routing for a direct connection without server side
+rendering (SSR), rehydration, Nuxt.js or other heavy tools and other words.
+
+Step 0.
+We will add the about page on our example.com project.
+
 Step 1.
-If you need to add page at "mysite.com/pathname",
-add to the public folder HTML file with name "pathname"
-with redirect to "/?pathname".
+Add an HTML file named «about.html» to the public folder, redirected to "/? about".
 
 ```html
   <!DOCTYPE html>
   <html lang="en-us" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
     <head>
-      <title>Pathname</title>
+      <title>Example – About</title>
       <meta charset="UTF-8" />
-      <meta http-equiv="refresh" content="0; URL=https://mysite.com/?pathname" />
+      <meta http-equiv="refresh" content="0; URL=https://example.com/?about" />
     </head>
   </html>
 ```
 
 Step 2.
-Add your "pathname" route to the routes array.
+Add your «about» route to the routes array.
 
 ```ts
   import { RouteRecordRaw } from 'vue-router';
 
   const routes: Array<RouteRecordRaw> = [
     {
-      path: '/pathname',
-      name: 'pathname-view',
-      component: () => import('@/views/PathnameView.vue'),
+      path: '/about',
+      name: 'about-view',
+      component: () => import('@/views/AboutView.vue'),
     },
   ];
 
@@ -48,8 +54,8 @@ Next step will be add route to the queries array.
 
   const queries: Array<IQueryRoute> = [
     {
-      query: '/?pathname',
-      path: '/pathname',
+      query: '/?about',
+      path: '/about',
     },
   ];
 

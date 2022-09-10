@@ -16,13 +16,13 @@ Step 0.
 We will add the about page on our example.com project.
 
 Step 1.
-Add an HTML file named «about.html» to the public folder, redirected to "/? about".
+Add an HTML file named Â«about.htmlÂ» to the public folder, redirected to "/? about".
 
 ```html
   <!DOCTYPE html>
   <html lang="en-us" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
     <head>
-      <title>Example – About</title>
+      <title>Example â€“ About</title>
       <meta charset="UTF-8" />
       <meta http-equiv="refresh" content="0; URL=https://example.com/?about" />
     </head>
@@ -30,7 +30,7 @@ Add an HTML file named «about.html» to the public folder, redirected to "/? abou
 ```
 
 Step 2.
-Add your «about» route to the routes array.
+Add your Â«aboutÂ» route to the routes array.
 
 ```ts
   import { RouteRecordRaw } from 'vue-router';

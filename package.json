@@ -1,6 +1,6 @@
 {
   "name": "vue-query-router",
-  "version": "1.0.8",
+  "version": "1.0.11",
   "description": "Vue Query Router for routing by query in Vue Router",
   "keywords": [
     "vue-router",

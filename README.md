@@ -10,10 +10,21 @@ Vue Query Router for routing by query in Vue Router
 Step 1.
 If you need to add page at "mysite.com/pathname",
 add to the public folder HTML file with name "pathname"
-with redirect to "mysite.com/?pathname".
+with redirect to "/?pathname".
+
+```html
+  <!DOCTYPE html>
+  <html lang="en-us" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+      <title>Pathname</title>
+      <meta charset="UTF-8" />
+      <meta http-equiv="refresh" content="0; URL=https://mysite.com/?pathname" />
+    </head>
+  </html>
+```
 
 Step 2.
-Add your "pathname" route to the routes.
+Add your "pathname" route to the routes array.
 
 ```ts
   import { RouteRecordRaw } from 'vue-router';
@@ -30,7 +41,7 @@ Add your "pathname" route to the routes.
 ```
 
 Step 3.
-Next step will be add route to the queries.
+Next step will be add route to the queries array.
 
 ```ts
   import IQueryRoute from 'vue-query-router/src/types/IQueryRoute';
@@ -46,8 +57,8 @@ Next step will be add route to the queries.
 ```
 
 Step 4.
-Open router index file, and add next code before export router
-and after router init and routes, queries arrays.
+Open router index file, and add call QueryRouter.update 
+after router init and before export router .
 
 ```ts
   import {

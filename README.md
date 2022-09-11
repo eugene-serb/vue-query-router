@@ -5,15 +5,17 @@ Vue Query Router for routing by query in Vue Router
 
 `npm install vue-query-router`
 
-## Usage with TypeScript
+## About
 
-Objective.
+Context.
 You are building a single page application (SPA) and you need to add a page
 to Vue.js and do routing for a direct connection without server side
 rendering (SSR), rehydration, Nuxt.js or other heavy tools and other words.
 
-Step 0.
+Objective.
 We will add the about page on our example.com project.
+
+## Usage with TypeScript
 
 Step 1.
 Add an HTML file named «about.html» to the public folder, redirected to "/? about".
@@ -96,4 +98,11 @@ You may need to add an entry to the declaration file, for example 'modules.d.ts'
 
 ```ts
   declare module 'vue-query-router';
+```
+
+## Types
+There are three types. IQueryRoute for all queries array.
+
+```ts
+  import IQueryRoute from 'vue-query-router/src/types/IQueryRoute';
 ```

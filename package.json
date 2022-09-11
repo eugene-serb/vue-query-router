@@ -1,6 +1,6 @@
 {
   "name": "vue-query-router",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Vue Query Router for routing by query in Vue Router",
   "keywords": [
     "vue-router",
@@ -14,6 +14,7 @@
     "email": "eugene.serb@gmail.com",
     "url": "https://eugene-serb.github.io/"
   },
+  "homepage": "https://github.com/eugene-serb/vue-query-router#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eugene-serb/vue-query-router.git"
@@ -27,10 +28,10 @@
     "build": "tsc",
     "test": "exit 0"
   },
-  "devDependencies": {
-    "typescript": "^4.8.2"
-  },
   "dependencies": {
     "vue-router": "^4.1.5"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.2"
   }
 }

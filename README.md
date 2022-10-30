@@ -18,7 +18,7 @@ We will add the about page on our example.com project.
 ## Usage with TypeScript
 
 Step 1.
-Add an HTML file named «about.html» to the public folder, redirected to "/? about".
+Add an HTML file named «about.html» to the public folder, redirected to "/?about".
 
 ```html
   <!DOCTYPE html>
